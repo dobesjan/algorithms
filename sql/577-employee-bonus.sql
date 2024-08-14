@@ -1,0 +1,1 @@
+select e.name name, b.bonus bonus from Employee e left outer join Bonus b ON e.empId = b.empId where b.bonus < 1000 or b.bonus is null

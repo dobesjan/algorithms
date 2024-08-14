@@ -1,0 +1,1 @@
+select w.id id from Weather w where exists (select w2.recordDate, w.temperature from Weather w2 where w2.recordDate = w.recordDate - 1 and w.temperature > w2.temperature);

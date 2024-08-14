@@ -1,0 +1,1 @@
+select m.name from Employee m where (select count(*) from Employee e where e.managerId = m.id) >= 5
