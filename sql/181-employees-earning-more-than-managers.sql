@@ -1,0 +1,1 @@
+select name Employee from Employee e where exists (select null from Employee m where m.id = e.managerId and e.salary > m.salary)

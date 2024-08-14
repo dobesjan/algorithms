@@ -1,0 +1,1 @@
+select MAX(num) ConsecutiveNums from Logs GROUP BY num having COUNT(num) > 3
